@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPUS WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>CPUs TUFF WEBSITE</header>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="openTab('home', this)">Home</div>
+  <div class="tab" onclick="openTab('fun', this)">RANDOM FR FR</div>
+  <div class="tab" onclick="openTab('tools', this)">MY TOOLS</div>
+  <div class="tab" onclick="openTab('about', this)">ABOUT</div>
+</div>
+
+
+<div id="home" class="content active">
+  <div class="card">
+    <h2>JOIN THE DISCORD</h2>
+    <p>discord server</p>
+    <button class="btn" onclick="joinDiscord()">Join Discord</button>
+  </div>
+</div>
+
+
+<div id="fun" class="content">
+  <div class="card">
+    <h2>random lol</h2>
+    <button class="btn" onclick="randomNumber()">Random Number</button>
+    <p id="rand"></p>
+  </div>
+</div>
+
+
+<div id="tools" class="content">
+  <div class="card">
+    <h2>MY TOOLS</h2>
+    <p>TOOLS</p>
+
+    <a href="downloads/soon.txt" download>
+      <button class="btn">SOON</button>
+    </a>
+
+    <a href="downloads/soon.txt" download>
+      <button class="btn">SOON</button>
+    </a>
+
+    </a>
+  </div>
+</div>
+
+
+<div id="about" class="content">
+  <div class="card">
+    <h2>INFO</h2>
+    <p>WEBSITE MADE BY CPU</p>
+    <p>ALL OF THESE ARE MY TOOLS UNLESS IT SAYS ITS MADE BY SOMEONE ELSE</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
