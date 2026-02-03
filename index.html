@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPUS WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+  CPUS TUFF WEBSITE
+  <span class="status">ONLINE</span>
+</header>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="openTab('home', this)">HOME</div>
+  <div class="tab" onclick="openTab('fun', this)">RANDOM FR FR</div>
+  <div class="tab" onclick="openTab('tools', this)">MY TOOLS</div>
+  <div class="tab" onclick="openTab('toolsplus', this)">TOOLS+</div>
+  <div class="tab" onclick="openTab('stats', this)">STATS</div>
+  <div class="tab" onclick="openTab('about', this)">ABOUT</div>
+</div>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="nav-item" onclick="openTab('home')">HOME</div>
+    <div class="nav-item" onclick="openTab('fun')">RANDOM</div>
+    <div class="nav-item" onclick="openTab('tools')">TOOLS</div>
+    <div class="nav-item" onclick="openTab('toolsplus')">TOOLS+</div>
+    <div class="nav-item" onclick="openTab('stats')">STATS</div>
+    <div class="nav-item" onclick="openTab('about')">ABOUT</div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div id="home" class="content active">
+      <div class="card">
+        <h2>JOIN THE DISCORD</h2>
+        <button class="btn" onclick="joinDiscord()">JOIN DISCORD</button>
+      </div>
+    </div>
+
+    <div id="fun" class="content">
+      <div class="card">
+        <h2>RANDOM FR FR</h2>
+
+        <button class="btn" onclick="randomNumber()">RANDOM NUMBER</button>
+        <p id="rand"></p>
+
+        <button class="btn" onclick="coinFlip()">COIN FLIP</button>
+        <p id="coin"></p>
+
+        <button class="btn" onclick="rollDice()">ROLL DICE</button>
+        <p id="dice"></p>
+
+        <button class="btn" onclick="countClick()">CLICK COUNTER</button>
+        <p id="count">0</p>
+      </div>
+    </div>
+
+    <div id="tools" class="content">
+      <div class="card">
+        <h2>MY TOOLS</h2>
+
+        <!-- Tool 1 -->
+        <div class="tool">
+          <span>ADB CONTROLLER BY CPU</span>
+          <span>USER FRIENDLY</span>
+          <a href="downloads/ADBCON.zip" download>
+            <button class="btn small">DOWNLOAD</button>
+          </a>
+        </div>
+
+        <!-- Tool 2 -->
+        <div class="tool">
+          <span>DISCORD SERVER NUKER</span>
+          <span>USER FRIENDLY</span>
+          <a href="downloads/NUKER.zip" download>
+            <button class="btn small">DOWNLOAD</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="toolsplus" class="content">
+      <div class="card">
+        <h2>TOOLS+</h2>
+        <p>EXPERIMENTAL STUFF</p>
+
+        <button class="btn" onclick="toggleTheme()">TOGGLE THEME</button>
+        <button class="btn" onclick="shakePage()">SHAKE PAGE</button>
+      </div>
+    </div>
+
+    <div id="stats" class="content">
+      <div class="card">
+        <h2>SITE STATS</h2>
+        <p>TOOLS RELEASED: 2</p>
+        <p>VERSION: 1.2</p>
+      </div>
+    </div>
+
+    <div id="about" class="content">
+      <div class="card">
+        <h2>ABOUT</h2>
+        <p>WEBSITE MADE BY CPU</p>
+        <p>all of these tools are made by me so far but if you want some of your tools on here feel free to join the discord and ask</p>
+		<p>W people LEO, Panda, XANAX, more soon</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
